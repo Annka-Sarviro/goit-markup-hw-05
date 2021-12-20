@@ -311,20 +311,21 @@ img {
 }
 
 .work-item-title {
-  display: block;
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px 0;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Command section */
@@ -606,7 +607,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-card-link:hover .card-overley {
+.projects-card-link:hover .card-overley,
+.projects-card-link:focus .card-overley {
   transform: translateY(0);
 }
 
